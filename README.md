@@ -1,6 +1,8 @@
 # forcepm
 
 ## Package generator
+Should be able to generate package from related commits
+
 ### Steps
 1. svn log --limit 100 --xml
 2. Filter commits by #p marker
@@ -18,3 +20,13 @@
 ## Dependency resolving
 * Exists not installed package with file revision < current package file revision
 * Build dependency tree on every commit and package generation
+
+## Package storage
+All generated packages should be placed to a storage. 
+Storage should be able to return package and package info by package name, id or file revision.
+Package info should contain:
+* Name
+* Id
+* First revision #
+* File to revision map
+* Dependencies list
