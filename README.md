@@ -1,6 +1,6 @@
 # forcepm
 
-## Package generator
+## Package builder
 Should be able to generate package from related commits
 
 ### Steps
