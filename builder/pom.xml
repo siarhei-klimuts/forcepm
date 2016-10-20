@@ -11,4 +11,12 @@
         <artifactId>forcepm</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.tmatesoft.svnkit</groupId>
+            <artifactId>svnkit-cli</artifactId>
+            <version>1.8.12</version>
+        </dependency>
+    </dependencies>
 </project>
