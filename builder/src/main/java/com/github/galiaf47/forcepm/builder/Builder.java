@@ -27,11 +27,12 @@ public class Builder {
         Package psckage = new Package(files);
         JAXBContext jaxbContext = JAXBContext.newInstance(Package.class);
         Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+        jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
         StringWriter sw = new StringWriter();
         jaxbMarshaller.marshal(psckage, sw);
         String xmlString = sw.toString();
 
-        System.out.println( "xmlString: " + xmlString);
+        System.out.println(xmlString);
     }
 
     private static SVNRepository getRepository(String url) throws SVNException {

@@ -11,7 +11,9 @@ import java.util.Map;
 @XmlRootElement(name = "Package")
 public class Package {
     @XmlTransient
-    Map<String, PackageType> types;
+    private Map<String, PackageType> types;
+    @XmlElement
+    private String version = "36.0";
 
     public  Package() {
         this.types = new HashMap<String, PackageType>();
