@@ -23,7 +23,7 @@ public class PackageMember {
 
     private String extractName(Path p) {
         String filename = p.getFileName().toString();
-        int index = filename.lastIndexOf(".");
+        int index = filename.indexOf(".");
 
         return filename.substring(0, index);
     }

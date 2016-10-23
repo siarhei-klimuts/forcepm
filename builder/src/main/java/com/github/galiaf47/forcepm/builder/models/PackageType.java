@@ -1,9 +1,11 @@
 package com.github.galiaf47.forcepm.builder.models;
 
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
 import java.util.HashSet;
 import java.util.Set;
 
+@XmlType(propOrder = {"members", "name"})
 public class PackageType {
     @XmlElement
     private String name;

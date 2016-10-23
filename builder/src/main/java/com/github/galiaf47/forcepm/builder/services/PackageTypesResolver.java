@@ -8,7 +8,7 @@ public class PackageTypesResolver {
     static {
         typesMap.put("classes", "ApexClass");
         typesMap.put("components", "ApexComponent");
-        typesMap.put("labels", "CustomLabel");
+        typesMap.put("labels", "CustomLabels");
         typesMap.put("objects", "CustomObject");
         typesMap.put("pages", "ApexPage");
         typesMap.put("staticresources", "StaticResource");
